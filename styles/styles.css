@@ -1,5 +1,5 @@
 main {
-   max-width: 840; 
+   max-width: 840px; 
 }
 
 nav {
@@ -41,7 +41,7 @@ aside{
 
 
 aside img {
-    width: 200;
+    width: 200px;
     height: auto;
 }
 
