@@ -6,10 +6,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-family: "Montserrat", serif;
-    font-family: "Poppins", sans-serif;
-    font-family: "Saira Semi Condensed", serif;
-    font-family: "Merriweather", serif;
+    font-family: 'Montserrat', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Saira Semi Condensed', serif;
+    font-family: 'Merriweather', serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -162,7 +162,7 @@ h2 {
     color: black;
     text-align: center;
     font-size: 36px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: ' 'Poppins', sans-serif;
 }
 
 
