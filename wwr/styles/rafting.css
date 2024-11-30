@@ -6,6 +6,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-family: "Montserrat", serif;
+    font-family: "Poppins", sans-serif;
+    font-family: "Saira Semi Condensed", serif;
+    font-family: "Merriweather", serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -233,6 +237,8 @@ footer p {
     display: block;
     border-radius: 5px;
 }
+
+
 
 
 
