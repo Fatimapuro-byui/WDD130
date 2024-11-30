@@ -64,6 +64,7 @@ nav ul li a:hover {
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    font-family: 'Merriweather', sans-serif;
 }
 
 .content {
@@ -83,7 +84,7 @@ h1 {
     color:darkblue;
     font-size: 12px;
     margin-top: 5px;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
 }
 
 
@@ -141,7 +142,7 @@ h1 {
     color: darkblue;
     font-size: 12px;
     margin-top: 5px;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -191,7 +192,7 @@ h2 {
     margin-top: 8px;
     padding: 0;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: black;
     text-align: center;
   }
@@ -232,6 +233,7 @@ footer p {
     display: block;
     border-radius: 5px;
 }
+
 
 
 
