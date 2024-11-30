@@ -5,11 +5,30 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background:#62B6CB ;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira+Semi+Condensed:wght@100;400&display=swap');
+
+
+
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+p, a, li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+    font-family: 'Saira Semi Condensed', sans-serif;
 }
 
 
@@ -231,4 +250,5 @@ footer p {
     display: block;
     border-radius: 5px;
 }
+
 
