@@ -1,17 +1,242 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');:root {
-    --primary-color: #3a43c5;
-    --secondary-color: #3652ad;
-    --accent1-color: #280274;
-    --accent2-color: #f5f7f8;
-  
-    --heading-font: 'Roboto', serif;
-    --paragraph-font: 'Roboto', serif;
-  
-    --nav-background-color: #0e0e0e;
-    --nav-link-color: #1328e4;
-    --nav-hover-link-color: #AF2655;
-    --nav-hover-background-color: #F3F3F3;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background:#62B6CB ;
+}
+
+
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0096C7;
+    color: white;
+}
+.logo {
+    width: 150px;
+    height: 100px;
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row-reverse;
+}
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 30px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: darkmagenta;
+}
+
+
+
+
+.rafting-section {
+    text-align: center;
+    padding: 20px;
+    background-color:#EFF6E0 ;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', sans-serif;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.text p {
+    color:darkblue;
+    font-size: 12px;
+    margin-top: 5px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+
+.image {
+    flex: 1;
+    padding: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+
+
+.history-section {
+    padding: 20px;
+    background-color: #EFF6E0;
+    text-align: center;
+}
+
+.history-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.text p {
+    color: darkblue;
+    font-size: 12px;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+ 
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.adventures figure {
+    text-align: center;
+}
+
+
+#adventures {
+    padding: 20px;
   }
+  
+  .adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .adventure-gallery figure {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .adventure-gallery img {
+    width: 200px;
+    height: 150px;
+    display: block;
+    border-radius: 5px;
+  }
+  
+  .adventure-gallery figcaption {
+    margin-top: 8px;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-align: center;
+  }
+  
+
+ 
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social a {
+    margin-left: 10px;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 5px;
+}
+
 
 
 header {
