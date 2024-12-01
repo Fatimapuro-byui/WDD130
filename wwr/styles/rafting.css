@@ -3,11 +3,16 @@
     --secondary-color: #3652ad;
     --accent1-color: #280274;
     --accent2-color: #f5f7f8;
+  
+    --heading-font: 'Roboto', serif;
+    --paragraph-font: 'Roboto', serif;
+  
     --nav-background-color: #0e0e0e;
     --nav-link-color: #1328e4;
     --nav-hover-link-color: #AF2655;
     --nav-hover-background-color: #F3F3F3;
   }
+
 
 header {
     margin: 1rem auto;
