@@ -63,10 +63,14 @@
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <legend>Purpose of Message:</legend>
-            <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-            <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-            <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+
+            <fieldset>
+             <legend>Purpose of Message:</legend>
+             <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+             <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+             <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+             </fieldset>
+             
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
             <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
