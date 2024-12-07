@@ -8,44 +8,51 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-family: 'Montserrat', serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background:#62B6CB ;
+    background:#7E9181;
 }
-
-
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    justify-content: center;
+    grid-template-columns: 1fr 2fr 1fr; /* Adjust column widths as needed */
     align-items: center;
     padding: 10px 20px;
     background-color: #0096C7;
     color: white;
 }
+
 .logo {
+    grid-column: 1;
     width: 150px;
-    height: 100px;
+    height: 150px;
+    border-radius: 50%;
+    justify-self: center; /* Center the logo horizontally */
 }
 
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    margin-bottom: 5px; /* Espaciado para separación visual */
+}
 
+nav {
+    grid-column: 3;
+    text-align: right; /* Align navigation items to the right */
+}
 
 nav ul {
     display: flex;
     list-style: none;
-    flex-direction: row-reverse;
-}
-nav ul li {
-    margin: 0 15px;
+    gap: 1.5cm; /* 1.5 cm spacing between nav items */
 }
 
 nav ul li a {
     display: block;
-    font-size: 30px;
-    padding: 20px;
+    font-size: 15px;
+    padding: 10px; /* Espaciado interno para mejor interacción */
     text-decoration: none;
     color: white;
 }
@@ -56,19 +63,86 @@ nav ul li a:hover {
 }
 
 
+h2 { 
+    color: #003459; 
+    font-size: 36px; 
+    font-family: 'Roboto', sans-serif; 
+    text-align: center; 
+    margin-bottom: 15px; }
 
 
+
+
+
+#business-hours {
+    background-color: #7E9181;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Flexbox para alineación en fila */
+    flex-wrap: wrap; /* Permitir que se envuelva en pantallas pequeñas */
+    gap: 2cm; /* Separación de 2 cm entre elementos */
+    flex-direction: row; /* Asegurar que los elementos estén en fila */
+    justify-content: center; /* Centrar contenido horizontalmente */
+}
+      
+#business-hours h2 {
+    text-align: center; /* Centrar el texto del título */
+    width: 100%; /* Hacer que el título ocupe toda la fila */
+    margin-bottom: 10px; /* Espaciado debajo del título */
+}
+      
+.hours-container {
+    background-color:#3E8989 ;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Hacer flexible el contenedor */
+    max-width: 45%; /* Limitar el ancho máximo al 45% */
+}
+      
+.background-image {
+    flex: 1; /* Hacer flexible el contenedor de la imagen */
+    max-width: 45%; /* Limitar el ancho máximo al 45% */
+    position: relative;
+    height: 200px; /* Ajustar la altura según sea necesario */
+    overflow: hidden;
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+      
+.background-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+      
+/* Diseño responsivo */
+    @media (max-width: 768px) {
+     #business-hours {
+        flex-direction: column; /* Apilar elementos verticalmente */
+        gap: 20px; /* Reducir la separación en pantallas pequeñas */
+    }
+      
+    .hours-container,
+    .background-image {
+        max-width: 100%; /* Asegurar que ocupen todo el ancho disponible */
+    }
+}
+      
+
+
+
+  
 .rafting-section {
     text-align: center;
     padding: 20px;
-    background-color:#EFF6E0 ;
+    background-color:#7E9181 ;
 }
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    font-family: 'Merriweather', sans-serif;
-}
 
 .content {
     display: flex;
@@ -84,7 +158,7 @@ h1 {
 }
 
 .text p {
-    color:darkblue;
+    color: black;
     font-size: 12px;
     margin-top: 5px;
     font-family: 'Saira Semi Condensed', sans-serif;
@@ -105,48 +179,166 @@ h1 {
 
 
 
-.history-section {
-    padding: 20px;
-    background-color: #EFF6E0;
-    text-align: center;
-}
 
-.history-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
 
-.content {
+
+  /* Container Styles */
+.container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding: 10px; /* Reduce el padding general */
+    gap: 10px; /* Menor espacio entre las secciones */
 }
 
-.text {
+/* General Section Styles */
+#company-info, #contact-form {
     flex: 1;
-    padding: 20px;
-    text-align: justify;
+    min-width: 250px; /* Reduce el ancho mínimo */
+    max-width: 48%; /* Menor ancho en pantallas grandes */
+    background-color: #3E8989;
+    color: black;
+    padding: 15px; /* Reduce el padding interno */
+    border-radius: 6px; /* Bordes menos redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
 }
 
-.image {
-    flex: 1;
-    text-align: center;
-    padding: 20px;
+/* Párrafos */
+#company-info p, #contact-form p {
+    margin-bottom: 8px; /* Reduce espacio entre párrafos */
 }
 
-.image img {
-    max-width: 100%;
-    height: auto;
+/* Iframe */
+#company-info iframe {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px; /* Reduce margen superior */
+}
+
+/* Formulario */
+form label {
     display: block;
-    border-radius: 5px;
+    margin-top: 8px; /* Reduce espacio entre etiquetas */
+    font-weight: bold;
 }
 
-.text p {
-    color: darkblue;
-    font-size: 12px;
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px; /* Reduce el padding interno */
     margin-top: 5px;
-    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    color: black;
 }
+
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    padding: 8px; /* Botón más compacto */
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem; /* Fuente del botón más pequeña */
+    margin-top: 10px; /* Menor espacio superior */
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #company-info, #contact-form {
+        max-width: 100%;
+    }
+}
+
+
+
+
+/* General Styles */
+.employee-profiles {
+    padding: 20px;
+    text-align: center; /* Centra el contenido principal */
+}
+
+/* Flexbox for Profiles */
+.employee-profiles .profiles-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los perfiles se ajusten en varias filas */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 30px; /* Espaciado uniforme entre perfiles */
+}
+
+/* Profile Styles */
+.employee-profiles .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 180px; /* Ancho consistente para los perfiles */
+}
+
+/* Estilo de las imágenes */
+.employee-profiles .profile img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    margin-bottom: 10px;
+    border: 3px solid #007BFF;
+}
+
+/* Estilo de los párrafos */
+.employee-profiles .profile p {
+    margin: 10px 0 0; /* Espaciado superior e inferior */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000; /* Cambia el color del texto a negro */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .employee-profiles .profiles-container {
+        gap: 20px; /* Ajusta el espaciado entre perfiles en pantallas más pequeñas */
+    }
+
+    .employee-profiles .profile {
+        width: 100%; /* Ocupa el ancho completo del contenedor */
+        max-width: 250px; /* Define un ancho máximo para perfiles */
+    }
+}
+
+@media (max-width: 480px) {
+    .employee-profiles .profile img {
+        width: 120px; /* Reduce el tamaño de las imágenes en pantallas pequeñas */
+        height: 120px;
+    }
+
+    .employee-profiles .profile p {
+        font-size: 0.9rem; /* Reduce ligeramente el tamaño de las letras */
+    }
+}
+
+
+
 
 
  
@@ -157,12 +349,7 @@ h1 {
     padding: 20px;
 }
 
-h2 {
-    color: black;
-    text-align: center;
-    font-size: 36px;
-    font-family: 'Roboto', sans-serif;
-}
+
 
 
 .adventures figure {
@@ -236,3 +423,4 @@ footer p {
     display: block;
     border-radius: 5px;
 }
+
