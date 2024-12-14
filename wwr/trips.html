@@ -24,30 +24,36 @@
             </ul>
         </nav>
     </header>
-
+    
 
     <main>
-        <section class="cta-contact">
-            <p>Want to learn more? <a href="contact.html" class="cta-button">Contact Us Now</a></p>
+        <section class="cta-contact"> 
+            <h2>Contact Us Now</h2> 
+            <p>Want to learn more? <a href="contact.html" class="cta-button">Contact Us</a></p> 
         </section>
-
+        <hr>
+        
+        
         <section class="trip-descriptions">
+            <h2>Our Rafting Trips</h2>
             <article>
                 <img src="images/beginnertrips.jpg" alt="Beginner Rafting Trip">
-                <h2>Beginner Rapids Adventure</h2>
+                <h3>Beginner Rapids Adventure</h3>
                 <p>A fun and safe experience for families and first-time rafters. Perfect for beginners!</p>
             </article>
             <article>
                 <img src="images/intermediatetrips.jpg" alt="Intermediate Rafting Trip">
-                <h2>Intermediate Rapids Challenge</h2>
+                <h3>Intermediate Rapids Challenge</h3>
                 <p>A thrilling ride for those looking to take their rafting skills to the next level.</p>
             </article>
             <article>
                 <img src="images/advancedtrips.jpg" alt="Advanced Rafting Trip">
-                <h2>Advanced Rapids Expedition</h2>
+                <h3>Advanced Rapids Expedition</h3>
                 <p>Experience the adrenaline rush on some of the most challenging rapids in the area.</p>
             </article>
         </section>
+        <hr>
+        
 
         <section class="trip-details">
             <h2>Trip Details</h2>
@@ -82,7 +88,7 @@
                 </tbody>
             </table>
         </section>
-          
+        <hr>
         
         
        
@@ -110,6 +116,7 @@
                         <div class="form-group">
                             <label for="trip-type">Type of Trip:</label>
                             <select id="trip-type" name="trip-type" required>
+                                <option value="" disabled selected>Select a Trip Type</option>
                                 <option value="beginner">Beginner Rapids Adventure</option>
                                 <option value="intermediate">Intermediate Rapids Challenge</option>
                                 <option value="advanced">Advanced Rapids Expedition</option>
