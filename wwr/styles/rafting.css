@@ -451,7 +451,7 @@ form button:hover {
   }
   
   .newsletter h2 {
-    color: white; /* Set the color of h2 elements to white */
+    color: white; 
   }
   
   .newsletter form {
@@ -461,7 +461,7 @@ form button:hover {
   }
   
   .newsletter label {
-    color: white; /* Set the color of labels to white */
+    color: white; 
   }
   
   .newsletter input[type="text"],
@@ -488,7 +488,7 @@ form button:hover {
     background-color: #0056b3;
   }
   
-  /* Responsive adjustments */
+  
   @media (max-width: 768px) {
     .newsletter {
       padding: 15px;
@@ -729,51 +729,120 @@ form button:hover {
 
 
 
-
-
 .cta-contact {
-    text-align: center;
+    background-color: #004085; 
     padding: 20px;
-    background-color: #124559;
-    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    color: white; 
+    max-width: 800px; 
 }
 
-.cta-contact .cta-button {
-    background-color: #FFD700;
-    color: #333333;
+
+.cta-contact h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: #f0f0f0; 
+}
+
+
+.cta-contact p {
+    margin: 0;
+    font-size: 1.2rem; 
+}
+
+
+.cta-button {
     padding: 10px 20px;
-    text-decoration: none;
+    background-color: #FFD700; 
+    color: #004085; 
+    border: none;
     border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; 
 }
 
-.cta-contact .cta-button:hover {
-    background-color: #FFC107;
+
+.cta-button:hover {
+    background-color: #FFA500; 
 }
+
+
+
+
 
 
 
 .trip-descriptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px; 
+    background-color: #efddc3; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
+    margin: 40px auto;
+    max-width: 1200px; 
+}
+
+.trip-descriptions h2 {
+    text-align: center;
+    color: #004085; 
+    margin-bottom: 30px; 
+    font-size: 2rem; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.trip-descriptions .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    background-color: #ffffff;
-    color: #333333;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; 
+    width: 100%; 
 }
 
 .trip-descriptions article {
-    text-align: center;
+    text-align: left;
+    background-color: #fff; 
+    padding: 25px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.trip-descriptions article:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .trip-descriptions img {
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: cover; 
     border-radius: 10px;
+    margin-bottom: 15px; 
+}
+
+.trip-descriptions h3 {
+    font-size: 1.5rem;
+    color: #004085; 
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.trip-descriptions p {
+    font-size: 1rem;
+    color: #555555;
 }
 
 .trip-details {
-    padding: 20px;
+    padding: 30px; 
     background-color: #f8f9fa;
+    border-radius: 10px; 
 }
 
 .trip-details table {
@@ -782,15 +851,20 @@ form button:hover {
 }
 
 .trip-details th, .trip-details td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+    border: 1px solid #000000;
+    padding: 10px; 
 }
 
 .trip-details th {
     background-color: #124559;
     color: white;
+    font-weight: bold;
 }
+
+
+
+
+
 
 
 
@@ -960,7 +1034,7 @@ footer {
 
 .wireframe-link {
     color: #FFD700; 
-  }
+}  
 
 footer p {
     margin: 0;
@@ -987,7 +1061,6 @@ footer p {
     display: block;
     border-radius: 5px;
 }
-
 
 
 
